@@ -21,7 +21,7 @@ const Contact = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:8006/api/register", {  // full backend URL
+      const res = await fetch("https://mypersonalporfolio.onrender.com/api/register", {  // full backend URL
         method: 'POST',
         headers: {
           "Content-Type": "application/json"
