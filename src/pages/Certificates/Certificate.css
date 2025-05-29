@@ -1,0 +1,179 @@
+.certificate-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin-left: 200px;
+}
+
+.certificate-section h2 {
+  margin-bottom: 20px;
+  color: #138781;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Buttons + scroll area in one row */
+.scroll-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px; 
+}
+
+/* Scroll area */
+.certificate-scroll {
+  display: flex;
+  overflow-x: hidden;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  max-width: 720px;
+  margin: 0 auto;
+
+  /* 👇 Add these lines */
+  scroll-snap-type: x mandatory;
+}
+
+
+/* Each certificate */
+.certificate-card {
+  min-width: 700px;
+  height: 500px;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* 👇 Add this line */
+  scroll-snap-align: start;
+}
+
+
+/* Certificate image */
+.certificate-card img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain; /* 👈 image pura dikhega */
+  border-radius: 8px;
+}
+
+/* Arrow buttons */
+.scroll-buttons button {
+  padding: 10px 16px;
+  font-size: 24px;
+  border: none;
+  background-color: #138781;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; /* 👈 makes sure it's above other content */
+  display: inline-block; 
+}
+
+.scroll-buttons button:hover {
+  background-color: #0f6c64;
+}
+.certificate-card h3 {
+  margin: 10px 0 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  padding-top: 20px;
+}
+
+.certificate-card p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+}
+/* Certificate.css */
+.certificate-section.light {
+  background-color: white;
+  color: black;
+}
+
+.certificate-section.dark {
+  background-color: rgba(0, 0, 0, 0.15);;
+  color: white;
+}
+.certificate-section.dark h3,
+.certificate-section.dark p {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+    /* ================= */
+
+
+@media (max-width: 00px) {
+  .certificate-section {
+    margin-left: 0;
+    padding: 10px 10px; /* thoda horizontal padding badha di */
+  }
+
+  .certificate-scroll {
+    max-width: 100%;
+    padding: 5px 0;
+    gap: 10px;
+  }
+
+  .certificate-card {
+    min-width: 100%; /* 90vw se 100% kar diya taaki pura container me fit ho */
+    max-width: 100%; /* max-width bhi 100% tak limit kiya */
+    height: auto; /* height auto kar diya taaki content ke hisab se adjust ho */
+    padding: 8px;
+    box-sizing: border-box; /* padding ko width me count kare */
+  }
+
+  .certificate-card img {
+    width: 100%;
+    height: auto; /* height auto kar diya taaki aspect ratio bani rahe */
+    object-fit: contain;
+  }
+
+  .scroll-buttons button {
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+}
+/* ================= Responsive ================= */
+
+@media (max-width: 500px) {
+  .certificate-section {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .certificate-scroll {
+    max-width: 100%;
+    padding: 5px 0;
+    gap: 10px;
+  }
+
+  .certificate-card {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .scroll-buttons button {
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+}
+
+
+
+
