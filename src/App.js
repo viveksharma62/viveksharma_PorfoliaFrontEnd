@@ -26,16 +26,16 @@ function App() {
       <div className="container">
         <About />
         <Educations />
-        <Certificate/>
+         <WorkExp />
         <Techstack />
         <Projects />
-        <WorkExp />
+        <Certificate/>
         <Contact />
       </div>
       <div className="footer">
         <Tada>
         <h4 className="text-center txt">
-          made with 👉 Vivek sharma &copy; 2025
+          made by 👉 Vivek sharma &copy; 2025
         </h4>
         </Tada>
       </div>
