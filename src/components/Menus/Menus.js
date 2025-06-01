@@ -72,18 +72,17 @@ const Menus = ({ toggle }) => {
                 </Link>
               </div>
               <div className="nav-link">
-              <Link 
-                to="certificate"
+                <Link
+                to="workExp"
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration={100}
-              >
-                <FcDiploma1 />
-                Certificate
-              </Link>
-
+                duration={100}>
+                <FcPortraitMode />
+                Work Experice
+                </Link>
               </div>
+              
 
               <div className="nav-link">
                 <Link 
@@ -109,16 +108,19 @@ const Menus = ({ toggle }) => {
                 </Link>
               </div>
               <div className="nav-link">
-                <Link
-                to="workExp"
+              <Link 
+                to="certificate"
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration={100}>
-                <FcPortraitMode />
-                Work Experice
-                </Link>
+                duration={100}
+              >
+                <FcDiploma1 />
+                Certificate
+              </Link>
+
               </div>
+              
               <div className="nav-link">
                 <Link 
                 to="contact"
@@ -171,17 +173,18 @@ const Menus = ({ toggle }) => {
                 <FcReading />
                 </Link>
               </div>
-
-              <div className="nav-link">
-              <Link 
-                to="certificate"
+               <div className="nav-link">
+              <Link
+                to="workExp"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}>
-                <FcDiploma1 />
-              </Link>
+                <FcPortraitMode />
+                </Link>
               </div>
+
+              
 
               <div className="nav-link">
               <Link 
@@ -204,17 +207,18 @@ const Menus = ({ toggle }) => {
                 <BsProjector />
                 </Link>
               </div>
-
               <div className="nav-link">
-              <Link
-                to="workExp"
+              <Link 
+                to="certificate"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}>
-                <FcPortraitMode />
-                </Link>
+                <FcDiploma1 />
+              </Link>
               </div>
+
+             
 
               <div className="nav-link">
               <Link 

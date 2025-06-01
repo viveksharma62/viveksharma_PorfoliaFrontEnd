@@ -89,20 +89,22 @@ const MobileNav = () => {
                   Eduction
                 </Link>
               </div>
+               <div className="nav-link">
+                <Link
+                  to="workExp"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                  onClick={handleMenuClick}
 
-              <div className="nav-link">
-              <Link 
-                to="certificate"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                <FcDiploma1 />
-                Certificate
-              </Link>
-
+                >
+                  <FcPortraitMode />
+                  Work Experice
+                </Link>
               </div>
+
+              
 
               <div className="nav-link">
                 <Link
@@ -134,19 +136,19 @@ const MobileNav = () => {
                 </Link>
               </div>
               <div className="nav-link">
-                <Link
-                  to="workExp"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                  onClick={handleMenuClick}
+              <Link 
+                to="certificate"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcDiploma1 />
+                Certificate
+              </Link>
 
-                >
-                  <FcPortraitMode />
-                  Work Experice
-                </Link>
               </div>
+             
               <div className="nav-link">
                 <Link
                   to="contact"
