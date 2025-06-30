@@ -10,6 +10,7 @@ import certificateImage8 from "../assets/certificate/certificate8.jpg";
 import certificateImage9 from "../assets/certificate/certificate9.jpg";
 import certificateImage10 from "../assets/certificate/certificate10.jpg";
 import certificateImage11 from "../assets/certificate/certificate11.jpg";
+import certificateImage12 from "../assets/certificate/certificate12.jpg";
 
 const certificateData = [
   {
@@ -79,6 +80,12 @@ const certificateData = [
     image: certificateImage11,
     title: "Database Programming With SQL",
     org: "Oracle Academy",
+  },
+  {
+    id: 12,
+    image: certificateImage12,
+    title: " Web Design With MERN Stack",
+    org: "Brainybeam Info-Tech PVT LTD",
   },
 ];
 
