@@ -4,9 +4,17 @@ import WeatherWeb from '../../assets/images/weather-application.png';
 import tejasAss from '../../assets/images/tejas.png';
 import TextUtil from '../../assets/images/text-utils.png';
 import BMS from '../../assets/images/bankmanagementsystem1.png';
+import AiImage from '../../assets/images/AiImages.png'
 
 const Projects = () => {
   const projectData = [
+    {
+      title: 'AI Image Generator',
+      image: AiImage,
+      badges: ['MongoDB', 'Express', 'React', 'Node'],
+      tag: 'Responsive',
+      link: 'https://viveksharma62-image-zenerated.vercel.app/',
+    },
     {
       title: 'Hotstar clone website',
       image: 'https://repository-images.githubusercontent.com/618076926/821b1ab6-7853-4e1c-857d-f91dc1362bd2',
@@ -89,7 +97,7 @@ const Projects = () => {
           </div>
           <div className='card-body'>
             <h5 className='text-uppercase'>{project.title}</h5>
-            <a className='ad-btn' href={project.link} target='_blank' rel='noreferrer'>View</a>
+            <a className='ad-btn' href={project.link} target='_blank' rel='noreferrer'>Live</a>
           </div>
         </div>
       </div>
